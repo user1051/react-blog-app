@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { bollywoodData, foodData, techData } from "../data";
 
 const Latest = () => {
 	const [techPost, setTechPost] = useState([]);
 	const [foodPost, setFoodPost] = useState([]);
 	const [bollyPost, setBollyPost] = useState([]);
+	const navigate = useNavigate();
 	useEffect(() => {
 		setTechPost(techData[Math.floor(Math.random() * techData.length)]);
 		setFoodPost(foodData[Math.floor(Math.random() * foodData.length)]);
@@ -24,7 +26,14 @@ const Latest = () => {
 				</div>
 				<div className="mt-6 flex justify-between">
 					{
-						<div className="flex flex-col w-1/3 cursor-pointer mx-2">
+						<div
+							className="flex flex-col w-1/3 cursor-pointer mx-2"
+							onClick={() =>
+								navigate(`/${techPost.category}/${techPost.id}`, {
+									state: techPost,
+								})
+							}
+						>
 							<img
 								src={techPost.img}
 								alt=""
@@ -41,7 +50,14 @@ const Latest = () => {
 						</div>
 					}
 					{
-						<div className="flex flex-col w-1/3 cursor-pointer mx-2">
+						<div
+							className="flex flex-col w-1/3 cursor-pointer mx-2"
+							onClick={() =>
+								navigate(`/${foodPost.category}/${foodPost.id}`, {
+									state: foodPost,
+								})
+							}
+						>
 							<img
 								src={foodPost.img}
 								alt=""
@@ -58,7 +74,14 @@ const Latest = () => {
 						</div>
 					}
 					{
-						<div className="flex flex-col w-1/3 cursor-pointer mx-2">
+						<div
+							className="flex flex-col w-1/3 cursor-pointer mx-2"
+							onClick={() =>
+								navigate(`/${bollyPost.category}/${bollyPost.id}`, {
+									state: bollyPost,
+								})
+							}
+						>
 							<img
 								src={bollyPost.img}
 								alt=""

@@ -24,7 +24,7 @@ export const techData = [
 	{
 		id: 11,
 		category: "Technology",
-		img: "https://i.gadgets360cdn.com/large/intel_core_i9_12900ks_intel_youtube_1641564934678.jpg?downsize=950:*",
+		img: "https://static.techspot.com/articles-info/2351/images/intel-12900k-10.jpg",
 		title:
 			"Intel Core i9-12900KS with Massive 5.5GHz Clock Speed on a Single Core",
 		timestamp: "19 March 2022",
@@ -36,7 +36,7 @@ export const techData = [
 			" The all new Apple MacBook Pro: Gets the work done, without slowing down",
 		category: "Technology",
 		timestamp: "09 March 2022",
-		img: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAUMus7.img?h=758&w=1348&m=6&q=60&o=f&l=f",
+		img: "https://imageio.forbes.com/specials-images/imageserve/62239d44f06c1f3c7579a719/Apple-Brand-M1-Model-Macbook-pro-with-colorful-light-background-/960x0.jpg?fit=bounds&format=jpg&width=960",
 		desc: "The ports making a comeback include full-size HDMI, card slot reader and the Mag Safe 3 charging port with magnetic connector, other than thunderbolt ports and audio port. While the comeback ports aren’t the most advanced ones but still support high-speed data transfer. I love the MagSafe connector as it prevents the laptop from falling if walked on the cord accidentally.",
 	},
 	{
@@ -50,7 +50,7 @@ export const techData = [
 	{
 		id: 14,
 		category: "Technology",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOybziCsqqTFsvZ7hEh4GzpBYQiVnz_nI29A&usqp=CAU",
+		img: "https://images.livemint.com/img/2022/03/23/1600x900/OnePlus_10_Pro_1648035202299_1648035227005.jpg",
 		title: "OnePlus 10 Pro Front Design Teased Ahead of January 11 Launch",
 		timestamp: "10 March 2022",
 		desc: "OnePlus 10 Pro front design has been revealed in a new teaser ahead of its official launch. The smartphone appears to have a curved-edge display, which looks similar to the OnePlus 9 Pro. The OnePlus 10 Pro is also teased to debut as the first phone to run on ColorOS 12.1. Although the launch of the new OnePlus phone is still a week away, the Chinese company has continued its trend of creating hype for its next-generation flagship by announcing its features on social media.To reveal the front design of the OnePlus 10 Pro, OnePlus has posted an image on Weibo that gives us a clear view of the phone. It seems to have narrow bezels on left and right sides and a curved design. OnePlus 10 Pro also appears to have a thinner chin and a higher screen-to-body ratio over what we have on the OnePlus 9 Pro.Further, the OnePlus 10 Pro appears with a hole-punch display design where the selfie camera is positioned on the top-left side. This is identical to last year's models, including OnePlus 9 Pro and OnePlus 8 Pro. OnePlus 10 Pro Price Tipped, Camera Specifications Teased Some earlier teaser images have showcased the OnePlus 10 Pro from its back. The phone seems to have triple rear cameras in a square module.",
