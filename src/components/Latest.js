@@ -29,7 +29,7 @@ const Latest = () => {
 						<div
 							className="flex flex-col w-1/3 cursor-pointer mx-2"
 							onClick={() =>
-								navigate(`/${techPost.category}/${techPost.id}`, {
+								navigate(`/${techPost.category}/article/${techPost.id}`, {
 									state: techPost,
 								})
 							}
@@ -53,7 +53,7 @@ const Latest = () => {
 						<div
 							className="flex flex-col w-1/3 cursor-pointer mx-2"
 							onClick={() =>
-								navigate(`/${foodPost.category}/${foodPost.id}`, {
+								navigate(`/${foodPost.category}/article/${foodPost.id}`, {
 									state: foodPost,
 								})
 							}
@@ -77,7 +77,7 @@ const Latest = () => {
 						<div
 							className="flex flex-col w-1/3 cursor-pointer mx-2"
 							onClick={() =>
-								navigate(`/${bollyPost.category}/${bollyPost.id}`, {
+								navigate(`/${bollyPost.category}/article/${bollyPost.id}`, {
 									state: bollyPost,
 								})
 							}

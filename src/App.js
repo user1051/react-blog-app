@@ -17,7 +17,7 @@ function App() {
 				<Route path="/fitness" element={<Fitness />} />
 				<Route path="/technology" element={<Tech />} />
 				<Route path="/food" element={<Food />} />
-				<Route path="/:postCategory/:postId" element={<Article />} />
+				<Route path="/:postCategory/article/:postId" element={<Article />} />
 			</Routes>
 		</Router>
 	);
