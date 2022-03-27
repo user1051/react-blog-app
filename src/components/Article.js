@@ -1,10 +1,21 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import rythm from "../assets/rythm.svg";
+import { foodData, techData, tourismData } from "../data";
 
 const Article = () => {
 	const location = useLocation();
-	//console.log(location);
+	const [tourismPost, setTourismPost] = useState([]);
+	const [techPost, setTechPost] = useState([]);
+	const [foodPost, setFoodPost] = useState([]);
+
+	const navigate = useNavigate();
+	useEffect(() => {
+		setTechPost(techData[Math.floor(Math.random() * techData.length)]);
+		setFoodPost(foodData[Math.floor(Math.random() * foodData.length)]);
+
+		setTourismPost(tourismData[Math.floor(Math.random() * tourismData.length)]);
+	}, []);
 
 	return (
 		<div className="w-screen px-8 flex flex-col items-center mt-2 h-full">
@@ -39,8 +50,100 @@ const Article = () => {
 						</div>
 					</div>
 				</div>
+
 				<div className="w-full mt-4">
 					<h1 className="text-black font-bold text-2xl">More From The Siren</h1>
+					<div className="flex justify-between w-full border-t-2 border-slate-400 my-6">
+						<div
+							className="flex flex-col w-1/3 h-full cursor-pointer mt-12"
+							onClick={() =>
+								navigate(`/${tourismPost.category}/article/${tourismPost.id}`, {
+									state: tourismPost,
+								})
+							}
+						>
+							<h1 className="font-semibold text-gray-400">Related Reads</h1>
+							<img src={tourismPost.img} alt="" className="h-56 mt-2" />
+							<div className="my-4">
+								<h1 className="font-bold text-xl">{tourismPost.title}</h1>
+							</div>
+							<div className="justify-start">
+								<div className="flex items-center">
+									<img
+										src={require("../assets/avatar.png")}
+										alt=""
+										className="h-20 w-20"
+									/>
+									<div className="flex flex-col ml-3">
+										<h2 className="text-black font-bold">Mike Ross</h2>
+										<h2 className="text-slate-500 font-semibold">
+											{tourismPost.timestamp}
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							className="flex flex-col w-1/3 h-full cursor-pointer mt-12 mx-8"
+							onClick={() =>
+								navigate(`/${techPost.category}/article/${techPost.id}`, {
+									state: techPost,
+								})
+							}
+						>
+							<h1 className="font-semibold text-gray-400">Related Reads</h1>
+							<img src={techPost.img} alt="" className="h-56 mt-2" />
+							<div className="my-4">
+								<h1 className="font-bold text-xl">{techPost.title}</h1>
+							</div>
+							<div className="justify-start">
+								<div className="flex items-center">
+									<img
+										src={require("../assets/avatar.png")}
+										alt=""
+										className="h-20 w-20"
+									/>
+									<div className="flex flex-col ml-3">
+										<h2 className="text-black font-bold">Mike Ross</h2>
+										<h2 className="text-slate-500 font-semibold">
+											{techPost.timestamp}
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							className="flex flex-col w-1/3 h-full cursor-pointer mt-12"
+							onClick={() =>
+								navigate(`/${foodPost.category}/article/${foodPost.id}`, {
+									state: foodPost,
+								})
+							}
+						>
+							<h1 className="font-semibold text-gray-400">Related Reads</h1>
+							<img src={foodPost.img} alt="" className="h-56 mt-2" />
+							<div className="my-4">
+								<h1 className="font-bold text-xl">{foodPost.title}</h1>
+							</div>
+							<div className="justify-start">
+								<div className="flex items-center">
+									<img
+										src={require("../assets/avatar.png")}
+										alt=""
+										className="h-20 w-20"
+									/>
+									<div className="flex flex-col ml-3">
+										<h2 className="text-black font-bold">Mike Ross</h2>
+										<h2 className="text-slate-500 font-semibold">
+											{foodPost.timestamp}
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

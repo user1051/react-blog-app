@@ -64,15 +64,6 @@ export const fitnessData = [
 export const techData = [
 	{
 		id: 11,
-		category: "Technology",
-		img: "https://static.techspot.com/articles-info/2351/images/intel-12900k-10.jpg",
-		title:
-			"Intel Core i9-12900KS with Massive 5.5GHz Clock Speed on a Single Core",
-		timestamp: "19 March 2022",
-		desc: "Intel Core i9-12900KS was announced by the company at CES 2022. The 12th Gen Intel Core ‘Alder Lake' CPU offers a 5.5GHz boost clock speed on a single core. The new Intel Core i9-12900KS is also capable of functioning at 5.2GHz on all cores while performing heavy multi-core tasks, according to the company. This is the first Special Edition processor for desktops from Intel since the Core i9-9900KS in 2019 and will be available to manufacturers in Q1 2022, according to the company.The new processor unveiled by Intel is similar to the Core i9-12900K CPU and sports eight performance cores and eight efficiency cores. The new 12th Gen Alder Lake Intel Core i9-12900KS offers up to 40 percent higher performance generation-on-generation, according to the company. The company also ran a live demo of the CPU running Hitman 3 at CES 2022, where the CPU was shown to maintain a clock speed of 5.2GHz on all eight performance cores. Intel is yet to reveal details of exactly how much power the new Intel Core i9-12900KS will draw, or how much the CPU will cost.",
-	},
-	{
-		id: 12,
 		title:
 			" The all new Apple MacBook Pro: Gets the work done, without slowing down",
 		category: "Technology",
@@ -81,7 +72,7 @@ export const techData = [
 		desc: "The ports making a comeback include full-size HDMI, card slot reader and the Mag Safe 3 charging port with magnetic connector, other than thunderbolt ports and audio port. While the comeback ports aren’t the most advanced ones but still support high-speed data transfer. I love the MagSafe connector as it prevents the laptop from falling if walked on the cord accidentally.",
 	},
 	{
-		id: 13,
+		id: 12,
 		title: " Best-selling Galaxy S22 Ultra being held back by tight supply",
 		category: "Technology",
 		timestamp: "15 March 2022",
@@ -89,7 +80,7 @@ export const techData = [
 		desc: "Samsung’s decision to merge the Galaxy Note lineup into its Galaxy S series is paying dividends. This year’s top-of-the-line Galaxy S22 Ultra is basically a Galaxy Note flagship reincarnated. As you’d expect, customers are really liking the device. A new research report has revealed that the Galaxy S22 Ultra is the best-selling model of Samsung’s latest flagship series. It could be selling even more units if only Samsung could just make more of them. A Wave7 Research survey has revealed that the Galaxy S22 Ultra was Samsung’s top-seller in February at wireless carrier stores in the US. 69% of the sales reps surveyed said that demand for the Galaxy S22 series as a whole is higher than it was last year for the Galaxy S21 lineup.",
 	},
 	{
-		id: 14,
+		id: 13,
 		category: "Technology",
 		img: "https://images.livemint.com/img/2022/03/23/1600x900/OnePlus_10_Pro_1648035202299_1648035227005.jpg",
 		title: "OnePlus 10 Pro Front Design Teased Ahead of January 11 Launch",
@@ -97,12 +88,21 @@ export const techData = [
 		desc: "OnePlus 10 Pro front design has been revealed in a new teaser ahead of its official launch. The smartphone appears to have a curved-edge display, which looks similar to the OnePlus 9 Pro. The OnePlus 10 Pro is also teased to debut as the first phone to run on ColorOS 12.1. Although the launch of the new OnePlus phone is still a week away, the Chinese company has continued its trend of creating hype for its next-generation flagship by announcing its features on social media.To reveal the front design of the OnePlus 10 Pro, OnePlus has posted an image on Weibo that gives us a clear view of the phone. It seems to have narrow bezels on left and right sides and a curved design. OnePlus 10 Pro also appears to have a thinner chin and a higher screen-to-body ratio over what we have on the OnePlus 9 Pro.Further, the OnePlus 10 Pro appears with a hole-punch display design where the selfie camera is positioned on the top-left side. This is identical to last year's models, including OnePlus 9 Pro and OnePlus 8 Pro. OnePlus 10 Pro Price Tipped, Camera Specifications Teased Some earlier teaser images have showcased the OnePlus 10 Pro from its back. The phone seems to have triple rear cameras in a square module.",
 	},
 	{
-		id: 15,
+		id: 14,
 		title: "Pixel 6a: Specs, features, design",
 		category: "Technology",
 		timestamp: "08 March 2022",
 		img: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAUMI8S.img?h=274&w=486&m=6&q=60&o=f&l=f",
 		desc: "Google is reportedly working on its affordable offering, the Pixel 6a. Previous leaks suggested that the phone could launch in May during Google IO 2022. However, a popular tipster now reveals that the launch of Pixel 6a may be delayed to July. The tipster states that the delay is due to chip shortage and supply chain issues.",
+	},
+	{
+		id: 15,
+		category: "Technology",
+		img: "https://static.techspot.com/articles-info/2351/images/intel-12900k-10.jpg",
+		title:
+			"Intel Core i9-12900KS with Massive 5.5GHz Clock Speed on a Single Core",
+		timestamp: "19 March 2022",
+		desc: "Intel Core i9-12900KS was announced by the company at CES 2022. The 12th Gen Intel Core ‘Alder Lake' CPU offers a 5.5GHz boost clock speed on a single core. The new Intel Core i9-12900KS is also capable of functioning at 5.2GHz on all cores while performing heavy multi-core tasks, according to the company. This is the first Special Edition processor for desktops from Intel since the Core i9-9900KS in 2019 and will be available to manufacturers in Q1 2022, according to the company.The new processor unveiled by Intel is similar to the Core i9-12900K CPU and sports eight performance cores and eight efficiency cores. The new 12th Gen Alder Lake Intel Core i9-12900KS offers up to 40 percent higher performance generation-on-generation, according to the company. The company also ran a live demo of the CPU running Hitman 3 at CES 2022, where the CPU was shown to maintain a clock speed of 5.2GHz on all eight performance cores. Intel is yet to reveal details of exactly how much power the new Intel Core i9-12900KS will draw, or how much the CPU will cost.",
 	},
 ];
 
@@ -149,7 +149,7 @@ export const tourismData = [
 		title: "Kerela : Gods Own Country",
 		category: "Tourism",
 		img: "https://xiradestinations.com/wp-content/uploads/2020/04/4.3.jpg",
-		timestamp: "Tourism / 20 March 2022",
+		timestamp: "20 March 2022",
 		desc: "Kerala was created by Gods as per mythology. As per the mythological accounts, Sage Parshurama, who was the incarnation of Vishnu, the creator of the world, created Kerala with his axe. He threw the axe in the water, and the water receded to make the place of land which is the modern Kerala. According to another mythological account, King Mahabali used to rule Kerala and even gods were jealous of the prosperity and wealth in the kingdom on those days and  eventually they succeeded in sending him away through the incarnation of Lord Vishnu called Vamana. To commemorate the memories of King Bali, Onam, the state festival of Kerala is celebrated every year with joy and zeal.",
 	},
 ];

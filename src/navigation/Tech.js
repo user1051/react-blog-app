@@ -22,7 +22,7 @@ const Tech = () => {
 								key={item.id}
 								className="w-full flex h-64 border-b-2 border-slate-300 py-6 cursor-pointer"
 								onClick={() =>
-									navigate(`${item.category}/article/${item.id}`, {
+									navigate(`/${item.category}/article/${item.id}`, {
 										state: item,
 									})
 								}

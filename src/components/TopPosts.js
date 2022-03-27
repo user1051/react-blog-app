@@ -7,12 +7,12 @@ const TopPosts = ({ id, title, category, timestamp, img, state }) => {
 		<div
 			className="w-full flex h-max border-b-2 border-slate-300 py-6 cursor-pointer"
 			onClick={() =>
-				navigate(`${category}/article/${id}`, {
+				navigate(`/${category}/article/${id}`, {
 					state: state,
 				})
 			}
 		>
-			<img src={img} alt="" className="w-1/2 h-full " />
+			<img src={img} alt="" className="w-1/2 h-28" />
 			<div className="flex flex-col h-full w-1/2 justify-between p-px ml-2">
 				<h1 className="text-sm font-bold">{title}</h1>
 
