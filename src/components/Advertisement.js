@@ -7,7 +7,7 @@ const Advertisement = ({ style, slot }) => {
 	return (
 		// <div className="w-full h-96 mt-4 border-2 border-slate-700 flex items-center justify-center">
 		<ins
-			className="adsbygoogle"
+			class="adsbygoogle"
 			style={style}
 			data-ad-client="ca-pub-2415334479874214"
 			data-ad-slot={slot}

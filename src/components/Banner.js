@@ -35,9 +35,9 @@ const Banner = () => {
 					<h1 className="absolute top-1/2 left-12 text-3xl font-bold text-white">
 						{tourismPost.title}
 					</h1>
-					<h1 className="absolute top-1/2 left-12 text-xl font-semibold text-white mt-12">
-						{tourismPost.timestamp}
-					</h1>
+					<p className="absolute top-1/2 left-12 text-xl font-semibold text-white mt-12">
+						<span>{tourismPost.category}</span> / {tourismPost.timestamp}
+					</p>
 				</div>
 				<div className="w-1/3 ml-4 flex-flex-col">
 					<img
