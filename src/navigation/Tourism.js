@@ -1,24 +1,24 @@
-import axios from "../axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import axios from "../axios";
 import TopPosts from "../components/TopPosts";
 import ReactLoading from "react-loading";
+import { useNavigate } from "react-router-dom";
 
-const Tech = () => {
-	const [techData, setTechData] = useState([]);
+const Tourism = () => {
+	const [tourismData, setTourismData] = useState([]);
 	const [loading, setLoading] = useState(true);
-	useEffect(() => {
-		axios.get("/technology").then((res) => {
-			if (res.data) {
-				setLoading(false);
-				setTechData(res.data.techArticles);
-			}
-		});
-	}, []);
 	const navigate = useNavigate();
 	function truncate(str, n) {
 		return str?.length > n ? str.substr(0, n - 1) + "...." : str;
 	}
+	useEffect(() => {
+		axios.get("/tourism").then((res) => {
+			if (res.data) {
+				setLoading(false);
+				setTourismData(res.data.tourismArticles);
+			}
+		});
+	}, []);
 	return (
 		<div className="w-screen p-8 flex flex-col items-center">
 			<div className="w-3/4 flex">
@@ -35,10 +35,10 @@ const Tech = () => {
 					<>
 						<div className="w-3/4 flex flex-col">
 							<div>
-								<h1 className="text-3xl font-semibold">Technology</h1>
+								<h1 className="text-3xl font-semibold">Food</h1>
 								<div className="bg-red-400 w-20 h-1 mt-1"></div>
 							</div>
-							{techData.map((item) => {
+							{tourismData.map((item) => {
 								return (
 									<div
 										key={item.id}
@@ -71,7 +71,7 @@ const Tech = () => {
 								<h1 className="text-2xl font-semibold">Top Post</h1>
 								<div className="bg-red-400 w-12 h-1 mt-1"></div>
 							</div>
-							{techData.map((item) => {
+							{tourismData.map((item) => {
 								return (
 									<TopPosts
 										key={item.id}
@@ -92,4 +92,4 @@ const Tech = () => {
 	);
 };
 
-export default Tech;
+export default Tourism;

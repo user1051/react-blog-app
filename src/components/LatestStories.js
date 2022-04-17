@@ -1,6 +1,6 @@
+import axios from "../axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { bollywoodData, fitnessData, tourismData } from "../data";
 
 const LatestStories = () => {
 	const [tourismPost, setTourismPost] = useState([]);
@@ -11,11 +11,34 @@ const LatestStories = () => {
 		return str?.length > n ? str.substr(0, n - 1) + "...." : str;
 	}
 	useEffect(() => {
-		setTourismPost(tourismData[Math.floor(Math.random() * tourismData.length)]);
-		setFitnessPost(fitnessData[Math.floor(Math.random() * fitnessData.length)]);
-		setBollyPost(
-			bollywoodData[Math.floor(Math.random() * bollywoodData.length)]
-		);
+		axios
+			.get("/bollywood")
+			.then((res) =>
+				setBollyPost(
+					res.data.bollywoodArticles[
+						Math.floor(Math.random() * res.data.bollywoodArticles.length)
+					]
+				)
+			);
+
+		axios
+			.get("/fitness")
+			.then((res) =>
+				setFitnessPost(
+					res.data.fitnessArticles[
+						Math.floor(Math.random() * res.data.fitnessArticles.length)
+					]
+				)
+			);
+		axios
+			.get("/tourism")
+			.then((res) =>
+				setTourismPost(
+					res.data.tourismArticles[
+						Math.floor(Math.random() * res.data.tourismArticles.length)
+					]
+				)
+			);
 	}, []);
 	return (
 		<div className="w-screen px-8 flex flex-col items-center mt-6">

@@ -1,6 +1,6 @@
+import axios from "../axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { fitnessData, foodData, tourismData } from "../data";
 
 const Banner = () => {
 	const [tourismPost, setTourismPost] = useState([]);
@@ -10,10 +10,33 @@ const Banner = () => {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		setFoodPost(foodData[Math.floor(Math.random() * foodData.length)]);
-
-		setTourismPost(tourismData[Math.floor(Math.random() * tourismData.length)]);
-		setFitnessPost(fitnessData[Math.floor(Math.random() * fitnessData.length)]);
+		axios
+			.get("/food")
+			.then((res) =>
+				setFoodPost(
+					res.data.foodArticles[
+						Math.floor(Math.random() * res.data.foodArticles.length)
+					]
+				)
+			);
+		axios
+			.get("/tourism")
+			.then((res) =>
+				setTourismPost(
+					res.data.tourismArticles[
+						Math.floor(Math.random() * res.data.tourismArticles.length)
+					]
+				)
+			);
+		axios
+			.get("/fitness")
+			.then((res) =>
+				setFitnessPost(
+					res.data.fitnessArticles[
+						Math.floor(Math.random() * res.data.fitnessArticles.length)
+					]
+				)
+			);
 	}, []);
 
 	return (

@@ -6,6 +6,7 @@ import Fitness from "./navigation/Fitness";
 import Home from "./navigation/Home";
 import Tech from "./navigation/Tech";
 import Food from "./navigation/Food";
+import Tourism from "./navigation/Tourism";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Route path="/fitness" element={<Fitness />} />
 				<Route path="/technology" element={<Tech />} />
 				<Route path="/food" element={<Food />} />
+				<Route path="/tourism" element={<Tourism />} />
 				<Route path="/:postCategory/article/:postId" element={<Article />} />
 			</Routes>
 		</Router>

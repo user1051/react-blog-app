@@ -14,6 +14,9 @@ const NavBar = () => {
 					<Link to="/" className="text-lg font-medium">
 						Home
 					</Link>
+					<Link to="/tourism" className="text-lg font-medium">
+						Tourism
+					</Link>
 					<Link to="/technology" className="text-lg font-medium">
 						Technology
 					</Link>

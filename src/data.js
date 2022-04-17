@@ -1,4 +1,4 @@
-export const foodData = [
+const foodData = [
 	{
 		id: 1,
 		title: "Basic + Awesome Broccoli Cheese Soup",
@@ -17,7 +17,7 @@ export const foodData = [
 	},
 ];
 
-export const fitnessData = [
+const fitnessData = [
 	{
 		id: 6,
 		title: "The Yoga Warrior",
@@ -61,7 +61,7 @@ export const fitnessData = [
 	},
 ];
 
-export const techData = [
+const techData = [
 	{
 		id: 11,
 		title:
@@ -106,7 +106,7 @@ export const techData = [
 	},
 ];
 
-export const bollywoodData = [
+const bollywoodData = [
 	{
 		id: 16,
 		title: "The Kashmir Files crosses Rs 200 crore mark",
@@ -135,7 +135,7 @@ export const bollywoodData = [
 	},
 ];
 
-export const tourismData = [
+const tourismData = [
 	{
 		id: 21,
 		title: "Manali: Valley of the Gods",
@@ -153,3 +153,11 @@ export const tourismData = [
 		desc: "Kerala was created by Gods as per mythology. As per the mythological accounts, Sage Parshurama, who was the incarnation of Vishnu, the creator of the world, created Kerala with his axe. He threw the axe in the water, and the water receded to make the place of land which is the modern Kerala. According to another mythological account, King Mahabali used to rule Kerala and even gods were jealous of the prosperity and wealth in the kingdom on those days and  eventually they succeeded in sending him away through the incarnation of Lord Vishnu called Vamana. To commemorate the memories of King Bali, Onam, the state festival of Kerala is celebrated every year with joy and zeal.",
 	},
 ];
+
+module.exports = {
+	foodData,
+	fitnessData,
+	tourismData,
+	techData,
+	bollywoodData,
+};
